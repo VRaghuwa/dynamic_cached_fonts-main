@@ -1,0 +1,13 @@
+name: Verify Formatting
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  verify_formatting:
+    name: Verify Formatting
+    uses: sidrao2006/workflows/.github/workflows/verify_dart_formatting.yml@v1

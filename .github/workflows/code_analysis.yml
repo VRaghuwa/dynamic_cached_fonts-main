@@ -1,0 +1,15 @@
+name: Code Analysis
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  pana_analyze:
+    name: Analyze package with Pana
+    uses: sidrao2006/workflows/.github/workflows/pana_code_analysis.yml@v1
+
+    permissions:
+      checks: write

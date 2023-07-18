@@ -1,0 +1,13 @@
+name: Analyze Project
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  analyze_project:
+    name: Analyze Project
+    uses: sidrao2006/workflows/.github/workflows/analyze_flutter_project.yml@v1

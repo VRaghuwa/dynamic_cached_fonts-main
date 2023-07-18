@@ -1,0 +1,12 @@
+name: Documentation Analysis
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  dartdoc_analysis:
+    name: Documentation Analysis
+    uses: sidrao2006/workflows/.github/workflows/dartdoc.yml@v1
